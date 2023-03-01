@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F8"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotti"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            android:paddingTop="40dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/coffee">
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/crdView"
+            android:layout_height="60dp"
+            android:outlineAmbientShadowColor="#fff"
+            app:cardElevation="5dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#7F6EE4"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="4dp">
+
+
+                <EditText
+                    android:id="@+id/edtEid"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="62dp"
+                    android:textColorHint="#A5A5A5"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="@integer/material_motion_duration_long_2"
+                    android:shadowDy="@integer/material_motion_duration_long_2"
+                    android:hint="Enter EId"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:background="@color/white"
+                    android:padding="15dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:id="@+id/crdView2"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="4dp"
+            android:layout_marginTop="17dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX ="100dp"
+                app:passwordToggleEnabled="true"
+                android:background="@color/white"
+                app:passwordToggleTint="#7F6EE4"
+                tools:layout_editor_absoluteY="260dp">
+
+                <EditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:hint="Password"
+                    android:textColorHint="#A5A5A5"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="16sp"
+                    android:background="@color/white"
+                    android:padding="25dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:id="@+id/spinner"
+        android:layout_width="310dp"
+        android:layout_height="60dp">
+    </Spinner>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogIn"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_grad"
+        android:inputType="textCapSentences"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:shadowDx="@integer/material_motion_duration_long_2"
+        android:shadowDy="@integer/material_motion_duration_long_1"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="Login"
+        android:shadowColor="#7061D7"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your password?"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="#87868F"/>
+
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign up >"
+            android:layout_marginTop="40dp"
+            android:textColor="#615EE8"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
+
+
+</LinearLayout>
